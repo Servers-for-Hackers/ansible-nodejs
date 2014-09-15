@@ -5,6 +5,9 @@
 
 - name: Remove Old Chris Lea PPA
   apt_repository: repo='ppa:chris-lea/node.js' state=absent
+  when: distrosupported|success
+
+- name: Remove Old Chris Lea Sources
   file: path='/etc/apt/sources.list.d/chris-lea-node_js-{{ ansible_distribution_release }}.list' state=absent
   when: distrosupported|success
 
