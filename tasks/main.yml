@@ -18,7 +18,6 @@
   apt_repository: repo='deb https://deb.nodesource.com/node {{ ansible_distribution_release }} main' state=present
   when: distrosupported|success
 
-
 - name: Add Nodesource Apt Sources List Deb Src
   apt_repository: repo='deb-src https://deb.nodesource.com/node {{ ansible_distribution_release }} main' state=present
   when: distrosupported|success
