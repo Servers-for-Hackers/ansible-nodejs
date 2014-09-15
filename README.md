@@ -1,4 +1,4 @@
-# Ansible Role for Nodejs for Ubuntu
+# Ansible Role for Nodejs (Debian/Ubuntu)
 
 Chris Lea is working with [nodesource](https://nodesource.com/) to supply Ubuntu users with the latest stable NodeJS. This means the Launchpad PPA is not used anymore.
 
